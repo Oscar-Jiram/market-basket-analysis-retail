@@ -48,11 +48,12 @@ Processed datasets and outputs are available in the `data/processed` directory.
 
 ---
 
-## SQL Analysis (SQLite)
-A dedicated SQL layer was used to validate key business metrics prior to Python-based
-market basket analysis.
+## Reproducible Scripts
 
-### Example: Average Order Value (AOV)
+All analyses in this project are fully reproducible. The repository is structured to allow any user to rerun the complete workflow from raw data to final insights.
+
+### SQL Validation Layer
+Key business metrics were first validated using SQL (SQLite) to ensure consistency before Python-based analysis.
 
 ```sql
 SELECT AVG(valor_por_pedido) AS avg_order_value
@@ -65,6 +66,33 @@ FROM (
 );
 
 ```
+
+This step validates the Average Order Value (AOV) directly at the database level, serving as a control metric before downstream processing.
+
+## Python Analysis
+
+-Data extraction from SQLite using sqlite3
+
+-Transaction-level preprocessing with pandas
+
+-Basket transformation via one-hot encoding
+
+-Manual computation of support, confidence, and lift
+
+-Export of association rules for downstream visualization
+
+<sub> All Python logic is contained in the notebooks/ and src/ directories and can be executed end-to-end without manual intervention.</sub>
+
+## Outputs
+
+-Cleaned and transformed datasets (data/processed)
+
+-Association rules exported as CSV
+
+-Interactive dashboards built in Power BI
+
+-The project is designed to be reproducible, auditable, and easily extensible.
+
 ---
 
 ## Key findings 
