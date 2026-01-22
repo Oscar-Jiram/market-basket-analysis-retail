@@ -55,27 +55,22 @@ This project includes a dedicated SQL layer used to validate key business metric
 
 ### Example: Average Order Value (AOV)
 
-SELECT AVG(valor_por_pedido)
-
+```sql
+SELECT AVG(valor_por_pedido) AS avg_order_value
 FROM (
-
     SELECT
-
         id_pedido,
-        
         SUM(precio_total) AS valor_por_pedido
-
     FROM tickets
-
     GROUP BY id_pedido
-
 );
+
 
 ---
 
 ## Key findings 
-
 =======
+
 ## Executive overview
 <img width="854" height="440" alt="image" src="https://github.com/user-attachments/assets/05011846-b419-4529-a17a-0c59a1dc6cf3" />
 
