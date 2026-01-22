@@ -65,11 +65,12 @@ FROM (
     GROUP BY id_pedido
 );
 
-
+```
 ---
 
 ## Key findings 
-=======
+
+---
 
 ## Executive overview
 <img width="854" height="440" alt="image" src="https://github.com/user-attachments/assets/05011846-b419-4529-a17a-0c59a1dc6cf3" />
