@@ -47,7 +47,6 @@ Processed datasets and outputs are available in the `data/processed` directory.
 - Interactive visualization of results using Power BI
 
 ---
-<<<<<<< HEAD
 ## SQL Analysis (SQLite)
 
 This project includes a dedicated SQL layer used to validate key business metrics before applying Python-based market basket analysis.
