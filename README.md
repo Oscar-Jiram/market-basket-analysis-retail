@@ -47,6 +47,7 @@ Processed datasets and outputs are available in the `data/processed` directory.
 - Interactive visualization of results using Power BI
 
 ---
+<<<<<<< HEAD
 ## SQL Analysis (SQLite)
 
 This project includes a dedicated SQL layer used to validate key business metrics before applying Python-based market basket analysis.
@@ -66,6 +67,40 @@ FROM (
 
 ## Key findings 
 
+=======
+## Executive overview
+<img width="854" height="440" alt="image" src="https://github.com/user-attachments/assets/05011846-b419-4529-a17a-0c59a1dc6cf3" />
+
+*<sub>Executive dashboard summarizing key business KPIs, including total revenue,
+customer volume, average ticket value, and product mix, providing a high-level
+view of overall business performance.</sub>*
+
+---
+## Sales Trend Analysis
+<img width="520" height="212" alt="image" src="https://github.com/user-attachments/assets/77857d51-ed9e-4246-8108-c406ed734fa9" />
+
+*<sub>Monthly revenue trend showing a sustained decline throughout the year,
+highlighting structural revenue risk despite a high volume of transactions.</sub>*
+
+---
+## Association Rules & Cross-Selling Opportunities
+<img width="854" height="440" alt="image" src="https://github.com/user-attachments/assets/8ce50bab-1713-4e8d-9a20-98c3548c160c" />
+
+*<sub>Visualization of association rules based on confidence and lift, revealing
+strong product relationships that can be leveraged for cross-selling,
+bundling, and recommendation strategies.</sub>*
+
+---
+## Product Performance & Concentration
+<img width="526" height="269" alt="image" src="https://github.com/user-attachments/assets/30d91fa3-9ba9-4fd8-8694-1e76ee03173c" />
+
+*<sub>Product-level sales distribution illustrating revenue and volume concentration
+across a small subset of products, indicating dependency risk and limited
+portfolio diversification.</sub>*
+
+---
+## Key Findings
+>>>>>>> 2775b28dd67e1240ffea86108b6dbd8c86090bb1
 - Total annual revenue reached approximately **€39.8M**, but monthly revenue declined
   by nearly **82%** over the year.
 - Revenue is highly concentrated in a single department, representing roughly **93%**
@@ -118,3 +153,8 @@ FROM (
 - Git & GitHub
 
 ---
+## Repository Structure
+- data/processed: cleaned datasets and outputs
+- notebooks: exploratory analysis and model development
+- src: reusable Python scripts
+- powerbi: interactive dashboard
