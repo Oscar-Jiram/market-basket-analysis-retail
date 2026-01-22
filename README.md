@@ -31,7 +31,7 @@ recommendations for revenue optimization.
 
 ## Dataset Overview
 - Transaction-level retail data (simulated business scenario)
-- Over 2 million individual orders
+- Over **2 million individual orders**
 - Products grouped by departments and sections
 - Data transformed into basket format for association rule analysis
 
@@ -42,16 +42,15 @@ Processed datasets and outputs are available in the `data/processed` directory.
 ## Methodology
 - Data cleaning and preprocessing using Python
 - Basket transformation and one-hot encoding
-- Generation of association rules using support, confidence, and lift metrics
+- Generation of association rules using **support**, **confidence**, and **lift**
 - Filtering of statistically and business-relevant rules
 - Interactive visualization of results using Power BI
 
 ---
+
 ## SQL Analysis (SQLite)
-
-This project includes a dedicated SQL layer used to validate key business metrics before applying Python-based market basket analysis.
-
----
+A dedicated SQL layer was used to validate key business metrics prior to Python-based
+market basket analysis.
 
 ### Example: Average Order Value (AOV)
 
