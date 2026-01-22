@@ -95,10 +95,6 @@ This step validates the Average Order Value (AOV) directly at the database level
 
 ---
 
-## Key findings 
-
----
-
 ## Executive overview
 <img width="854" height="440" alt="image" src="https://github.com/user-attachments/assets/05011846-b419-4529-a17a-0c59a1dc6cf3" />
 
