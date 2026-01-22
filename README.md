@@ -56,14 +56,19 @@ This project includes a dedicated SQL layer used to validate key business metric
 ### Example: Average Order Value (AOV)
 
 SELECT AVG(valor_por_pedido)
+
 FROM (
+
     SELECT
+
         id_pedido,
         SUM(precio_total) AS valor_por_pedido
-    FROM tickets
-    GROUP BY id_pedido
-)
 
+    FROM tickets
+
+    GROUP BY id_pedido
+
+);
 ---
 
 ## Key findings 
@@ -101,7 +106,7 @@ portfolio diversification.</sub>*
 
 ---
 ## Key Findings
->>>>>>> 2775b28dd67e1240ffea86108b6dbd8c86090bb1
+
 - Total annual revenue reached approximately **€39.8M**, but monthly revenue declined
   by nearly **82%** over the year.
 - Revenue is highly concentrated in a single department, representing roughly **93%**
