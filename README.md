@@ -62,6 +62,7 @@ FROM (
     SELECT
 
         id_pedido,
+        
         SUM(precio_total) AS valor_por_pedido
 
     FROM tickets
@@ -69,6 +70,7 @@ FROM (
     GROUP BY id_pedido
 
 );
+
 ---
 
 ## Key findings 
