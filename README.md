@@ -185,3 +185,7 @@ portfolio diversification.</sub>*
 - notebooks: exploratory analysis and model development
 - src: reusable Python scripts
 - powerbi: interactive dashboard
+
+*This project demonstrates end-to-end analytical thinking, from SQL-based
+metric validation to Python-driven market basket analysis and executive-level
+business recommendations.*
