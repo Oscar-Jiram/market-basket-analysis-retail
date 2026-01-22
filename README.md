@@ -69,33 +69,33 @@ FROM (
 
 This step validates the Average Order Value (AOV) directly at the database level, serving as a control metric before downstream processing.
 
-## Python Analysis
+### Python Analysis
 
--Data extraction from SQLite using sqlite3
+- Data extraction from SQLite using sqlite3
 
--Transaction-level preprocessing with pandas
+- Transaction-level preprocessing with pandas
 
--Basket transformation via one-hot encoding
+- Basket transformation via one-hot encoding
 
--Manual computation of support, confidence, and lift
+- Manual computation of support, confidence, and lift
 
--Export of association rules for downstream visualization
+- Export of association rules for downstream visualization
 
 <sub> All Python logic is contained in the notebooks/ and src/ directories and can be executed end-to-end without manual intervention.</sub>
 
-## Outputs
+### Outputs
 
--Cleaned and transformed datasets (data/processed)
+- Cleaned and transformed datasets (data/processed)
 
--Association rules exported as CSV
+- Association rules exported as CSV
 
--Interactive dashboards built in Power BI
+- Interactive dashboards built in Power BI
 
--The project is designed to be reproducible, auditable, and easily extensible.
+- The project is designed to be reproducible, auditable, and easily extensible.
 
 ---
 
-## Executive overview
+## Executive Overview
 <img width="854" height="440" alt="image" src="https://github.com/user-attachments/assets/05011846-b419-4529-a17a-0c59a1dc6cf3" />
 
 *<sub>Executive dashboard summarizing key business KPIs, including total revenue,
