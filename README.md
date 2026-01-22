@@ -47,8 +47,25 @@ Processed datasets and outputs are available in the `data/processed` directory.
 - Interactive visualization of results using Power BI
 
 ---
+## SQL Analysis (SQLite)
 
-## Key Findings
+This project includes a dedicated SQL layer used to validate key business metrics before applying Python-based market basket analysis.
+
+### Example: Average Order Value (AOV)
+```sql
+SELECT AVG(valor_por_pedido)
+FROM (
+    SELECT
+        id_pedido,
+        SUM(precio_total) AS valor_por_pedido
+    FROM tickets
+    GROUP BY id_pedido
+)
+
+---
+
+## Key findings 
+
 - Total annual revenue reached approximately **€39.8M**, but monthly revenue declined
   by nearly **82%** over the year.
 - Revenue is highly concentrated in a single department, representing roughly **93%**
