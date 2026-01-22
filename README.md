@@ -51,8 +51,10 @@ Processed datasets and outputs are available in the `data/processed` directory.
 
 This project includes a dedicated SQL layer used to validate key business metrics before applying Python-based market basket analysis.
 
+---
+
 ### Example: Average Order Value (AOV)
-```sql
+
 SELECT AVG(valor_por_pedido)
 FROM (
     SELECT
