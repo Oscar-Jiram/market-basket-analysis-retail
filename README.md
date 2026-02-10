@@ -124,6 +124,8 @@ bundling, and recommendation strategies.</sub>*
 *<sub>Product-level sales distribution illustrating revenue and volume concentration
 across a small subset of products, indicating dependency risk and limited
 portfolio diversification.</sub>*
+Lift was used as the primary metric to identify meaningful associations, as it highlights relationships that are stronger than random chance.
+
 
 ---
 ## Key Findings
@@ -166,6 +168,7 @@ Rules were prioritized using the following criteria:
 - Support above a minimum threshold to ensure volume
 - Clear interpretation for marketing or store layout decisions
 
+Rules with high confidence but low lift were deprioritized, as they may reflect common purchasing behavior rather than actionable associations.
 This prioritization ensures that insights are both statistically valid and operationally useful.
 
 ---
@@ -207,7 +210,8 @@ Based on the strongest association rules, the following actions are recommended:
 - Implement cross-selling bundles for high-lift product pairs.
 - Place strongly associated products closer together to increase basket size.
 - Use association rules to power recommendation systems in online or POS environments.
-
+  
+These insights can be directly integrated into promotional strategies, store layout decisions, or recommendation systems to increase average basket size.
 These actions can directly increase average order value and improve customer experience.
 
 ---
@@ -223,6 +227,12 @@ The focus is on practical decision-making rather than purely statistical discove
 - Jupyter Notebook
 - Power BI
 - Git & GitHub
+---
+## How to Run
+
+1. Run SQL queries to generate transactional aggregates.
+2. Execute the Python notebook/script to compute association rules.
+3. Review results and dashboards for insights.
 
 ---
 ## Repository Structure
