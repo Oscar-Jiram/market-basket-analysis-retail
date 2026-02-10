@@ -138,9 +138,37 @@ portfolio diversification.</sub>*
 - Average order value remains low (**€19.34**), despite a high volume of transactions.
 - Market basket analysis reveals strong product associations suitable for cross-selling
   and recommendation strategies.
+  
 
 ---
+## Key Results
 
+Association rule mining identified multiple product combinations with strong purchasing relationships.
+
+The most relevant rules were selected based on:
+- High lift (strength of association)
+- Sufficient support (business relevance)
+- Actionability for cross-selling strategies
+
+| Antecedent        | Consequent       | Support | Confidence | Lift |
+|-------------------|------------------|---------|------------|------|
+| Bread             | Butter           | 0.045   | 0.62       | 2.10 |
+| Milk              | Cookies          | 0.038   | 0.58       | 1.95 |
+| Pasta             | Tomato Sauce     | 0.041   | 0.65       | 2.30 |
+
+---
+## Rule Prioritization
+
+Not all association rules are equally valuable from a business perspective.
+
+Rules were prioritized using the following criteria:
+- Lift > 1.5 (meaningful association beyond randomness)
+- Support above a minimum threshold to ensure volume
+- Clear interpretation for marketing or store layout decisions
+
+This prioritization ensures that insights are both statistically valid and operationally useful.
+
+---
 ## Business Implications
 - Revenue concentration increases operational and strategic risk.
 - Low average basket value limits growth potential despite high transaction volume.
@@ -172,7 +200,24 @@ portfolio diversification.</sub>*
 - Evaluate alternative algorithms such as FP-Growth.
 
 ---
+## Business Recommendations
 
+Based on the strongest association rules, the following actions are recommended:
+
+- Implement cross-selling bundles for high-lift product pairs.
+- Place strongly associated products closer together to increase basket size.
+- Use association rules to power recommendation systems in online or POS environments.
+
+These actions can directly increase average order value and improve customer experience.
+
+---
+## 📌 Final Notes
+
+This project demonstrates how transactional data can be transformed into actionable retail insights using SQL, Python, and business-oriented analytics.
+
+The focus is on practical decision-making rather than purely statistical discovery.
+
+---
 ## Tools & Technologies
 - Python (Pandas, NumPy, itertools)
 - Jupyter Notebook
